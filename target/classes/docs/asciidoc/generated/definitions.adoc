@@ -1,0 +1,85 @@
+== Definitions
+=== Error
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|localizedMessage||false|string|
+|cause||false|<<Throwable>>|
+|stackTrace||false|<<Array>>|
+|suppressed||false|<<Array>>|
+|message||false|string|
+|===
+
+=== Flight
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|fltNumber||false|string|
+|engineType||false|string|
+|airlineCode||false|string|
+|seats||false|<<int>>|
+|===
+
+=== Map[String,Object]
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|empty||false|boolean|
+|===
+
+=== ModelAndView
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|reference||false|boolean|
+|view||false|<<View>>|
+|viewName||false|string|
+|modelMap||false|<<ModelMap>>|
+|model||false|<<Map[String,Object]>>|
+|empty||false|boolean|
+|===
+
+=== ModelMap
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|empty||false|boolean|
+|===
+
+=== SearchResponse
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|error||false|<<Error>>|
+|flights||false|<<List>>|
+|===
+
+=== StackTraceElement
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|fileName||false|string|
+|nativeMethod||false|boolean|
+|methodName||false|string|
+|className||false|string|
+|lineNumber||false|<<int>>|
+|===
+
+=== Throwable
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|localizedMessage||false|string|
+|cause||false|<<Throwable>>|
+|stackTrace||false|<<Array>>|
+|suppressed||false|<<Array>>|
+|message||false|string|
+|===
+
+=== View
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|contentType||false|string|
+|===
+
